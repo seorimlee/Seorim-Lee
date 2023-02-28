@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #000;
+
+        }
+
+        .click{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); 
+            z-index: 999;           
+        }
+        .click a{
+            color: inherit;
+            font-weight: 700;
+        }
+
+        .img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);            
+            overflow: hidden;
+            width: 200px;
+
+        }
+        .img img{
+            width: 200px;
+        }
+
+
+        .p {
+            -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+        }
+
+        
+
+        @keyframes spin {
+            50% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+            100% {
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="img">
+            <a href="index.html"><img src="Subject.png" alt="/" class="p"></a>
+        </div>
+        <div class="click">
+            <p>
+                <a href="index.html">click!</a>
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
